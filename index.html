@@ -22,8 +22,9 @@
     <br><br>
 
     <h3>Schreibe mir eine E-Mail: </h3>
-    <form>
-        <textarea name="message" rows="4" cols="30">Text einfügen..</textarea><br>
+    <form action="send_email.php" method="POST">
+        <textarea id="message" name="message" rows="4" cols="30">Text einfügen ...</textarea><br>
+        <input type="email" id="email" name="email" placeholder="Enter email adress"><br>
         <input type="submit" value="Submit">
     </form>
 </body>
