@@ -7,5 +7,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $to = "fabiangames367@gmail.com";
   $subject = "New email from form";
   $message = $_POST["message"];
+  mail($to, $subject, $message);
 }
 ?>
